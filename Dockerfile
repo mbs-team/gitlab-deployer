@@ -4,7 +4,6 @@ RUN \
   apk add bash make py-pip chromium && \
   apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev && \
   pip3 install azure-cli && \
-  npm install puppeteer@5.4.1 -g --unsafe-perm
 
 RUN which ssh-agent || ( apk add --no-cache openssh-client )
 
