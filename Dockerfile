@@ -1,9 +1,10 @@
 FROM node:12.18.2-alpine
 
 RUN \
-  apk add bash make py-pip chromium && \
+  apk add bash make py-pip chromium libsecret-dev && \
   apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev && \
   pip3 install azure-cli && \
+  yarn add global node-gyp
 
 RUN which ssh-agent || ( apk add --no-cache openssh-client )
 
