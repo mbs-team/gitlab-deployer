@@ -1,4 +1,4 @@
-FROM node:12.18.2-alpine
+FROM node:18.3.0-alpine
 
 RUN apk add bash g++ make py-pip chromium libsecret-dev
 
