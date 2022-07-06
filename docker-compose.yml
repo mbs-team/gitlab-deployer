@@ -3,7 +3,7 @@ version: '3.7'
 services:
   gitlab-deployer:
     container_name: gitlab-deployer
-    image: mbsteam/nodejs-azurecli-sshagent:node-16
+    image: mbsteam/nodejs-azurecli-sshagent:node-18
     tty: true
     volumes:
-      - ../bumastemra-mono:/tmp
+      - ../codebase:/tmp

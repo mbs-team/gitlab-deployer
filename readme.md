@@ -1,5 +1,5 @@
 ```bash
-Login into the MBS docker hub account.   
+Login into the docker hub account.   
 docker login --username=<user-name>
 ```
 
