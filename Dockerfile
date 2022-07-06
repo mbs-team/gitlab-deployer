@@ -1,8 +1,8 @@
-FROM node:12.18.2-alpine
+FROM node:16.14.2-alpine
 
 RUN apk add bash g++ make py-pip chromium libsecret-dev
 
-RUN apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev
+RUN apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev cargo make
 
 RUN pip3 install azure-cli
 
